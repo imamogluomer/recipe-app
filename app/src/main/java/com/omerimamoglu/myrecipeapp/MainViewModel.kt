@@ -30,7 +30,7 @@ class MainViewModel : ViewModel() {
             } catch (e: Exception) {
                 _categorieState.value = _categorieState.value.copy(
                     loading = false,
-                    error = "Error fetching Categories ${e.message}"
+                    error = "Errror fetching Categories ${e.message}"
                 )
 
             }
