@@ -1,5 +1,10 @@
 package com.omerimamoglu.myrecipeapp
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+
 data class Category(
     val idCategory:String,
     val strCategory:String,
@@ -7,6 +12,6 @@ data class Category(
     val strCategoryDescription: String
 
 
-)
+):Parcelable
 
 data class CategoriesResponse(val categories: List<Category>)

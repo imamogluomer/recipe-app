@@ -1,5 +1,4 @@
 package com.omerimamoglu.myrecipeapp
-
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -29,10 +28,9 @@ import coil.compose.rememberAsyncImagePainter
 
 @Composable
 fun RecipeScreen(modifier: Modifier = Modifier,
+                 viewstate:MainViewModel.RecipeState,
                  navigateToDetail: (Category) -> Unit) {
 
-    val recipeViewModel: MainViewModel = viewModel()
-    val viewstate by recipeViewModel.categoriesState
     Box(modifier = Modifier.fillMaxSize()) {
 
         when {
