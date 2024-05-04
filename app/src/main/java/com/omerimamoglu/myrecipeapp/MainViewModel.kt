@@ -14,10 +14,12 @@ class MainViewModel : ViewModel() {
 
     init {
         fetchCategories()
+
     }
     private fun fetchCategories() {
         viewModelScope.launch {
             try {
+
 
                 val response = recipeService.getCategories()
                 _categorieState.value = _categorieState.value.copy(

@@ -1,5 +1,6 @@
 package com.omerimamoglu.myrecipeapp
 
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -26,6 +27,8 @@ fun RecipeApp(navController: NavHostController){
             val category =  navController.previousBackStackEntry?.savedStateHandle?.
             get<Category>("cat") ?: Category("","","","")
             CatagoryDetailScreen(category = category)
+            Text("")
+
 
 
         }
