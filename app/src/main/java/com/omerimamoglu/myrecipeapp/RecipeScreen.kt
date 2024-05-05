@@ -40,7 +40,6 @@ fun RecipeScreen(modifier: Modifier = Modifier,
 
             viewstate.error != null -> {
                 Text("Error!")
-                Text("")
 
             }
 

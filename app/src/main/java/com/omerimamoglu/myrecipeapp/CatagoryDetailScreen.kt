@@ -37,7 +37,6 @@ fun CatagoryDetailScreen(category: Category){
 
 
         )
-        Text("")
 
     }
 }

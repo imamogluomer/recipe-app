@@ -27,7 +27,6 @@ fun RecipeApp(navController: NavHostController){
             val category =  navController.previousBackStackEntry?.savedStateHandle?.
             get<Category>("cat") ?: Category("","","","")
             CatagoryDetailScreen(category = category)
-            Text("")
 
 
 
